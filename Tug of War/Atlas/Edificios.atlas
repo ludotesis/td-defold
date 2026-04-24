@@ -1,0 +1,7 @@
+images {
+  image: "/Sprites/Bases/CastilloAzul.png"
+}
+images {
+  image: "/Sprites/Bases/CastilloRojo.png"
+}
+extrude_borders: 2
