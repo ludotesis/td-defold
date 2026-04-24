@@ -51,7 +51,7 @@ animations {
   fps: 8
 }
 animations {
-  id: "CaballeroAtack"
+  id: "CaballeroAttack"
   images {
     image: "/Sprites/Unidades/Azul/Caballero/Atack/atack1.png"
   }

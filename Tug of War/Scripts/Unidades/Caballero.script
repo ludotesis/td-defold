@@ -1,6 +1,7 @@
 function init(self)
 	sprite.play_flipbook("#sprite", hash("CaballeroRun"))
 	self.velocidad = 40
+	self.corriendo = true
 end
 
 function final(self)
@@ -10,9 +11,11 @@ function final(self)
 end
 
 function update(self, dt)
-	local posicionActual = go.get_position()
-	posicionActual.x = posicionActual.x + (self.velocidad * dt)
-	go.set_position(posicionActual)
+	if self.corriendo then
+		local posicionActual = go.get_position()
+		posicionActual.x = posicionActual.x + (self.velocidad * dt)
+		go.set_position(posicionActual)
+	end
 end
 
 function late_update(self, dt)
@@ -31,9 +34,12 @@ function fixed_update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-	-- Add message-handling code here
-	-- Learn more: https://defold.com/manuals/message-passing/
-	-- Remove this function if not needed
+	if message_id == hash("trigger_response") then
+		if message.enter then
+			self.corriendo = false
+			sprite.play_flipbook("#sprite", hash("CaballeroAttack"))
+		end
+	end
 end
 
 function on_input(self, action_id, action)
