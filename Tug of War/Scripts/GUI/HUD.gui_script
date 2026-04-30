@@ -1,7 +1,5 @@
 function init(self)
-	sprite.play_flipbook("#sprite", hash("CaballeroRun"))
-	self.velocidad = 40
-	self.corriendo = true
+
 end
 
 function final(self)
@@ -11,35 +9,15 @@ function final(self)
 end
 
 function update(self, dt)
-	if self.corriendo then
-		local posicionActual = go.get_position()
-		posicionActual.x = posicionActual.x + (self.velocidad * dt)
-		go.set_position(posicionActual)
-	end
-end
-
-function late_update(self, dt)
-	-- This function is called at the end of update cycle but before render
-	-- Learn more: https://defold.com/manuals/script/
-	-- Remove this function if not needed
-end
-
-function fixed_update(self, dt)
-	-- This function is called if 'Fixed Update Frequency' is enabled in the Engine section of game.project
-	-- Can be coupled with fixed updates of the physics simulation if 'Use Fixed Timestep' is enabled in
-	-- Physics section of game.project
 	-- Add update code here
 	-- Learn more: https://defold.com/manuals/script/
 	-- Remove this function if not needed
 end
 
 function on_message(self, message_id, message, sender)
-	if message_id == hash("trigger_response") then
-		if message.enter then
-			self.corriendo = false
-			sprite.play_flipbook("#sprite", hash("CaballeroAttack"))
-			msg.post("IntefazJuego#HUD", "actualizar_hp")
-		end
+	if message_id == hash("actualizar_hp") then
+		local nodo = gui.get_node("text_hp")
+		gui.set_text(nodo, "NOS ESTAN ATACANDO")
 	end
 end
 

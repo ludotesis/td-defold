@@ -1,0 +1,27 @@
+script: "/Scripts/GUI/HUD.gui_script"
+fonts {
+  name: "default"
+  font: "/builtins/fonts/default.font"
+}
+nodes {
+  position {
+    x: 613.0
+    y: 615.0
+  }
+  scale {
+    x: 5.0
+    y: 5.0
+  }
+  size {
+    x: 100.0
+    y: 50.0
+  }
+  type: TYPE_TEXT
+  text: "HP 100\n"
+  ""
+  font: "default"
+  id: "text_hp"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT
