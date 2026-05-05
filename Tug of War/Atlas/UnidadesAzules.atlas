@@ -1,0 +1,70 @@
+animations {
+  id: "CaballeroIdle"
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Idle/idle1.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Idle/idle2.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Idle/idle3.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Idle/idle4.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Idle/idle5.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Idle/idle6.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Idle/idle7.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Idle/idle8.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+}
+animations {
+  id: "CaballeroRun"
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Run/run0.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Run/run1.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Run/run2.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Run/run3.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Run/run4.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Run/run5.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+}
+animations {
+  id: "CaballeroAttack"
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Atack/atack1.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Atack/atack2.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Atack/atack3.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Caballero/Atack/atack4.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 6
+}
+extrude_borders: 2
