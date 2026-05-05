@@ -67,4 +67,45 @@ animations {
   playback: PLAYBACK_LOOP_FORWARD
   fps: 6
 }
+animations {
+  id: "LanceroIdle"
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle1.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle2.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle3.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle4.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle5.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle6.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle7.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle8.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle9.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle10.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle11.png"
+  }
+  images {
+    image: "/Sprites/Unidades/Azul/Lancero/Idle/idle12.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+}
 extrude_borders: 2
