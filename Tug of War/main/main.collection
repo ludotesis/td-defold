@@ -1,4 +1,28 @@
 name: "main"
+instances {
+  id: "CaballeroAzul"
+  prototype: "/Objects/Caballeros/Azul/CaballeroAzul.go"
+  position {
+    x: 130.0
+    y: 170.0
+  }
+}
+instances {
+  id: "CaballeroAzul1"
+  prototype: "/Objects/Caballeros/Azul/CaballeroAzul.go"
+  position {
+    x: 404.0
+    y: 186.0
+  }
+}
+instances {
+  id: "CaballeroAzul2"
+  prototype: "/Objects/Caballeros/Azul/CaballeroAzul.go"
+  position {
+    x: 704.0
+    y: 122.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "BaseJugador"
@@ -64,55 +88,6 @@ embedded_instances {
   position {
     x: 932.0
     y: 381.0
-  }
-}
-embedded_instances {
-  id: "CaballeroAzul"
-  data: "components {\n"
-  "  id: \"Caballero\"\n"
-  "  component: \"/Scripts/Unidades/Caballero.script\"\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"default_animation: \\\"CaballeroIdle\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "textures {\\n"
-  "  sampler: \\\"texture_sampler\\\"\\n"
-  "  texture: \\\"/Atlas/UnidadesAzules.atlas\\\"\\n"
-  "}\\n"
-  "\"\n"
-  "  position {\n"
-  "    z: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"collisionobject\"\n"
-  "  type: \"collisionobject\"\n"
-  "  data: \"type: COLLISION_OBJECT_TYPE_KINEMATIC\\n"
-  "mass: 0.0\\n"
-  "friction: 0.1\\n"
-  "restitution: 0.5\\n"
-  "group: \\\"default\\\"\\n"
-  "mask: \\\"default\\\"\\n"
-  "embedded_collision_shape {\\n"
-  "  shapes {\\n"
-  "    shape_type: TYPE_SPHERE\\n"
-  "    position {\\n"
-  "    }\\n"
-  "    rotation {\\n"
-  "    }\\n"
-  "    index: 0\\n"
-  "    count: 1\\n"
-  "  }\\n"
-  "  data: 25.0\\n"
-  "}\\n"
-  "\"\n"
-  "}\n"
-  ""
-  position {
-    x: 440.0
-    y: 305.0
   }
 }
 embedded_instances {
