@@ -23,5 +23,68 @@ nodes {
   id: "text_hp"
   inherit_alpha: true
 }
+nodes {
+  position {
+    x: 142.0
+    y: 82.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "btn_caballero"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "Caballero"
+  font: "default"
+  id: "text"
+  parent: "btn_caballero"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 378.0
+    y: 82.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "btn_lancero"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "Lacero\n"
+  ""
+  font: "default"
+  id: "text1"
+  parent: "btn_lancero"
+  inherit_alpha: true
+}
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
