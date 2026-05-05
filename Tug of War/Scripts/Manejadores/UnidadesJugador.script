@@ -1,5 +1,6 @@
 function init(self)
 	factory.create("#FabricaCaballeros", go.get_position())
+	factory.create("#FabricaLanceros", go.get_position())
 end
 
 function final(self)
