@@ -1,28 +1,4 @@
 name: "main"
-instances {
-  id: "CaballeroAzul"
-  prototype: "/Objects/Caballeros/Azul/CaballeroAzul.go"
-  position {
-    x: 130.0
-    y: 170.0
-  }
-}
-instances {
-  id: "CaballeroAzul1"
-  prototype: "/Objects/Caballeros/Azul/CaballeroAzul.go"
-  position {
-    x: 404.0
-    y: 186.0
-  }
-}
-instances {
-  id: "CaballeroAzul2"
-  prototype: "/Objects/Caballeros/Azul/CaballeroAzul.go"
-  position {
-    x: 704.0
-    y: 122.0
-  }
-}
 scale_along_z: 0
 embedded_instances {
   id: "BaseJugador"
@@ -97,4 +73,22 @@ embedded_instances {
   "  component: \"/GUI/HUD.gui\"\n"
   "}\n"
   ""
+}
+embedded_instances {
+  id: "FabricasJugador"
+  data: "components {\n"
+  "  id: \"UnidadesJugador\"\n"
+  "  component: \"/Scripts/Manejadores/UnidadesJugador.script\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"FabricaCaballeros\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/Objects/Caballeros/Azul/CaballeroAzul.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 226.0
+    y: 148.0
+  }
 }
